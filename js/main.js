@@ -10,3 +10,15 @@ document.getElementById("cerrarObtener").addEventListener("click" , e =>{
     document.getElementById("cardObtener").classList.add("oculto")
     document.getElementById("cardObtener").classList.remove("displayFlex")
 })
+
+
+document.getElementById("btnDesplegarMenu").addEventListener("click" , e =>{
+    let lista = document.getElementById("listaDesplegable")
+
+    if(lista.classList.contains("oculto")){
+        lista.classList.remove("oculto")
+        console.log("h")
+    }else{
+        lista.classList.add("oculto")
+    }
+})

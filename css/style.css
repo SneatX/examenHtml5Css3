@@ -262,3 +262,84 @@ nav li p:hover{
     color: var(--color-three);
 }
 
+.navBarCelular{
+    position: fixed;
+    z-index: 10;
+    top: 0;
+    width: 100%;
+    background-color: var(--color-one);
+    color: var(--color-three);
+}
+.nav__title{
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav__title i{
+    font-size: 2em;
+}
+
+.navBarCelular ul{
+    display: block;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+}
+.navBarCelular ul li{
+    text-align: center;
+    padding: 10px;
+}
+.navBarCelular ul li:hover{
+    background: var(--color-two);
+}
+
+
+
+@media (max-width: 800px) {
+    nav{
+        display: none;
+    }
+
+    .navBarCelular{
+        display: block;
+    }
+
+    .main__item{
+        grid-template-columns:1fr;
+    }
+    .main{
+        grid-template-rows: 1fr;
+        padding: 10px;
+    }
+    .item__contenedorImagenes{
+        outline: 0;
+    }
+    .item__contenedorImagenes > *{
+        padding:0;
+    }
+    .contenedorImagenes__box1{
+        height: auto;
+    }
+    .contenedorImagenes__box2{
+        height: auto;
+    }
+    .item__informacion h2{
+        font-size: 1.3em;
+        text-shadow: 0;
+    }
+    .item__informacion p{
+        font-size: 1em;
+        color: var(--color-three);
+        text-shadow:
+        -1px -1px 1px #000000,
+        1px -1px 1px #000000,
+        -1px 1px 1px #000000,
+        1px 1px 1px #000000;
+    }
+    .informacion__precios h3{
+        font-size: 1em;
+    }
+    .informacion__precios h4{
+        font-size: .7em;
+    }
+}
