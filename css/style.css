@@ -9,9 +9,102 @@
     font-family: "Gugi", sans-serif;
 }
 
+.oculto{
+    display: none;
+}
+
+.displayFlex{
+    display: flex;
+}
+
+.tarjeta__obtener{
+    position: absolute;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    backdrop-filter: blur(10px);
+    justify-content: center;
+    align-items: center;
+}
+
+.containerObtener{
+    width: 70vw;
+    height: 70vh;
+    background-color: var(--color-two);
+    border-radius: 30px;
+    border: 10px solid white;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+}
+.bx-x{
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 5em;
+    text-shadow:
+    -1px -1px 1px #ffffff,
+    1px -1px 1px #ffffff,
+    -1px 1px 1px #ffffff,
+    1px 1px 1px #ffffff;
+}
+
+.obtener__img{
+    text-align: center;
+    width: 100%;
+}
+
+.obtener__img img{
+    width: 30%;
+}
+
+.obtener__info{
+    text-align: center;
+}
+
+.obtener__info h2{
+    font-size: 2em;
+}
+
+.info__estrellas{
+    font-size: 4em;
+    color: var(--color-three);
+    text-shadow:
+    -1px -1px 1px #000000,
+    1px -1px 1px #000000,
+    -1px 1px 1px #000000,
+    1px 1px 1px #000000;
+}
+
+.obtener__info p{
+    font-size: 1.3em;
+}
+
+.agregar{
+    margin-top: 10px;
+}
+
+.agregar input{
+    width: 200px;
+    height: 30px;
+    font-size: 1.3em;
+}
+
+.agregar button{
+    border: 0;
+    width: 100px;
+    height: 30px;
+    font-size: 1.3em;
+    background-color: var(--color-three);
+}
+.agregar button:hover{
+    background-color: gray;
+}
+
+
 body{
     background: url(/storage/img/fondo.png);
-    position: relative;
 }
 
 nav{

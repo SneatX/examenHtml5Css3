@@ -8,7 +8,7 @@
     <title>Ecommerce</title>
 </head>
 <body>
-    <nav>
+    <nav id="navBar">
         <ul>
             <li>
                 <p>Producto 1</p>
@@ -100,7 +100,7 @@
                     <h3>$100.000</h3>
                     <h4>%99.99</h4>
                 </div>
-                <button>Obtener</button>
+                <button onclick="mostrarObtener()">Obtener</button>
             </div>
         </article>
         <article class="main__item">
@@ -129,7 +129,7 @@
                     <h3>$100.000</h3>
                     <h4>%99.99</h4>
                 </div>
-                <button>Obtener</button>
+                <button onclick="mostrarObtener()">Obtener</button>
             </div>
         </article>
         <article class="main__item">
@@ -158,13 +158,63 @@
                     <h3>$100.000</h3>
                     <h4>%99.99</h4>
                 </div>
-                <button>Obtener</button>
+                <button onclick="mostrarObtener()">Obtener</button>
             </div>
         </article>
-        
+        <article class="main__item">
+            <div class="item__contenedorImagenes">
+                <div class="contenedorImagenes__box1">
+                    <img src="storage/img/prenda1.png">
+                    <img src="storage/img/prenda1.png">
+                    <img src="storage/img/prenda1.png">
+                    <img src="storage/img/prenda1.png">
+                </div>
+                <div class="contenedorImagenes__box2">
+                    <img src="storage/img/prenda1.png">
+                </div>
+            </div>
+            <div class="item__informacion">
+                <h2>Nombre del producto</h2>
+                <div class="informacion__stars">
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star-half'></i>
+                </div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi exercitationem eaque laborum, dolorem magni voluptate odio corporis eligendi quia vitae facere ab voluptatibus, a quibusdam ducimus nemo asperiores, reiciendis perferendis.</p>
+                <div class="informacion__precios">
+                    <h3>$100.000</h3>
+                    <h4>%99.99</h4>
+                </div>
+                <button onclick="mostrarObtener()">Obtener</button>
+            </div>
+        </article>
     </main>
 
-
+    <div class="tarjeta__obtener oculto" id="cardObtener">
+        <div class="containerObtener">
+            <i class='bx bx-x' id="cerrarObtener"></i>
+            <div class="obtener__img">
+                <img src="storage/img/prenda1.png">
+            </div>
+            <div class="obtener__info">
+                <h2>Nombre del producto</h2>
+                <div class="info__estrellas">
+                    <i class='bx bxs-star' ></i>
+                    <i class='bx bxs-star' ></i>
+                    <i class='bx bxs-star' ></i>
+                    <i class='bx bxs-star' ></i>
+                    <i class='bx bxs-star-half' ></i>
+                </div>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloremque, autem? Quibusdam laborum consequuntur cupiditate odit, vero tempora debitis voluptate, dolorum distinctio explicabo nisi sint ea atque quam ipsa esse eaque?</p>
+                <div class="agregar">
+                    <input type="number" placeholder="Cantidad">
+                    <button>Agregar</button>
+                </div>
+            </div>
+        </div>
+    </div>
     
     <script src="js/main.js"></script>
 </body>
